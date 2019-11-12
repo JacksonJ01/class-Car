@@ -13,7 +13,7 @@ class Cars:
         self.mileage = int(mileage)
         self.doors = int(doors)
         self.price = int(price)
-        self.distance_traveled = int(distance)
+        self.distance = int(distance)
 
     def car_des(self):
         print(f"Wow that's interesting! I've never heard of a car like that.")
@@ -26,7 +26,7 @@ class Cars:
         print("What color would you want to change your car to if you had the opportunity?")
         nc = input(">>>")
         self.color = nc
-        print(f"Okay, so you'd have a {self.color} {self.make}. How about you buy me a car like that.")
+        print(f"Okay, so you'd have a {self.color} {self.make}. Would you buy me a car like that.")
         buy = input(">>>").title()
         if buy == "Yes" or buy == "Y":
             print("Really??? Wow, that's awesome...")
