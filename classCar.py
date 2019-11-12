@@ -4,7 +4,7 @@
 
 
 class Cars:
-    def __init__(self, make, model, color, year, engine, mileage, doors, price, odometer):
+    def __init__(self, make, model, color, year, engine, mileage, doors, price, distance):
         self.make = make
         self.model = model
         self.color = color
@@ -13,7 +13,7 @@ class Cars:
         self.mileage = int(mileage)
         self.doors = int(doors)
         self.price = int(price)
-        self.distance_traveled = int(odometer)
+        self.distance_traveled = int(distance)
 
     def car_des(self):
         print(f"Wow that's interesting! I've never heard of a car like that.")
@@ -40,7 +40,6 @@ class Cars:
 
     def meter(self):
         print("What is your odometer at?")
-        od = input(">>>")
-        self.odometer = od
-        print(f"You've traveled far! {self.odometer} miles")
-    # update odometer
+        odometer = input(">>>")
+        self.distance = odometer
+        print(f"You've traveled far! {self.distance} miles is far")
